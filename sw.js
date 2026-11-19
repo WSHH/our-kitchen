@@ -1,5 +1,5 @@
-const CACHE='love-kitchen-v4';
-const FILES=['./','index.html','style.css','core.js','network.js','app.js','config.js','manifest.webmanifest','assets/icon.svg','assets/icon-192.png','assets/icon-512.png'];
+const CACHE='love-kitchen-v5';
+const FILES=['./','start.html','index.html','style.css','core.js','network.js','app.js','config.js','manifest.webmanifest','assets/icon.svg','assets/icon-192.png','assets/icon-512.png'];
 self.addEventListener('install',event=>{
   // Install the whole release together; keep the previous release if installation fails.
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES.map(file=>new Request(new URL(file,self.registration.scope),{cache:'reload'})))).then(()=>self.skipWaiting()));

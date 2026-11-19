@@ -4,7 +4,7 @@
   "short_name": "小厨房",
   "description": "你来点菜，我来做饭。",
   "lang": "zh-CN",
-  "start_url": "./",
+  "start_url": "./start.html?launch=5",
   "scope": "./",
   "display": "standalone",
   "background_color": "#faf7f0",
